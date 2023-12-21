@@ -8,6 +8,8 @@ const Navbar = () => {
 
     const [menu, setMenu] = useState(false);
 
+    
+
     return (
         <div className='flex justify-between p-5 relative overflow-hidden'>
             <Link to='/'>

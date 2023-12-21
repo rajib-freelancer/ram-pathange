@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home";
-import CapitalGain from "../pages/Home/Blogs/CapitalGain";
-import PrivatePartnership from "../pages/Home/Blogs/PrivatePartnership";
-import NriTaxation from "../pages/Home/Blogs/NriTaxation";
-import NavigatingGstMaze from "../pages/Home/Blogs/NavigatingGstMaze";
-import StockTrading from "../pages/Home/Blogs/StockTrading";
+import CapitalGain from "../pages/Blogs/CapitalGain";
+import PrivatePartnership from "../pages/Blogs/PrivatePartnership";
+import NriTaxation from "../pages/Blogs/NriTaxation";
+import NavigatingGstMaze from "../pages/Blogs/NavigatingGstMaze";
+import StockTrading from "../pages/Blogs/StockTrading";
 
 export const router = createBrowserRouter([
     {

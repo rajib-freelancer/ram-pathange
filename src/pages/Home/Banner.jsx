@@ -26,7 +26,7 @@ const Banner = () => {
             <div className='md:px-40 px-5 py-5 flex justify-between items-center text-center md:flex-row flex-col gap-5'>
                 <select data-aos="fade-right"
                     data-aos-duration="1000" name="" id="" className='border-2 border-slate-400 p-3 py-1 rounded-sm px-10 md:w-48 w-full text-center'>
-                    <option value="service" selected >SERVICE</option>
+                    <option value="service" className='' >SERVICE</option>
                 </select>
                 <input data-aos="fade-right"
                     data-aos-duration="1500" type="text" name="name" id="" placeholder='NAME' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' />
