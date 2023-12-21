@@ -2,9 +2,8 @@
 import { IoIosArrowDropright } from "react-icons/io";
 import { IoIosArrowDropleft } from "react-icons/io";
 
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-// import { Navigation, Pagination } from 'swiper';
-import 'swiper/swiper-bundle.css';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import icon1 from '../../assets/02.png';
 import icon2 from '../../assets/03.png';
@@ -12,12 +11,40 @@ import icon3 from '../../assets/04.png';
 import icon4 from '../../assets/05.png';
 import icon5 from '../../assets/06.png';
 
-
+const CustomArrow = ({ onClick, className, arrow }) => {
+    return (
+        <div className={className} onClick={onClick}>
+            {arrow}
+        </div>
+    );
+};
 
 
 const Capabilities = () => {
 
-    const swiper = useSwiper();
+    const customLeftArrow = <CustomArrow className="md:text-5xl text-2xl absolute z-10 text-white md:left-5 cursor-pointer" arrow={<IoIosArrowDropleft />} />;
+    const customRightArrow = <CustomArrow className="md:text-5xl text-2xl absolute z-10 md:text-[#533ac2] text-white md:right-5 right-1 cursor-pointer" arrow={<IoIosArrowDropright />} />;
+
+
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 5
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 2
+        }
+    };
 
     return (
         <div id="capabilities">
@@ -25,88 +52,61 @@ const Capabilities = () => {
                 <h1>Our Capabilities</h1>
             </div>
             <div className='p-2'>
-                <Swiper
-                    slidesPerView={1}
-                    spaceBetween={0}
-                    // navigation={{
-                    //     nextEl: '.swiper-button-next',
-                    //     prevEl: '.swiper-button-prev',
-                    // }}
-                    // pagination={{ clickable: true }}
-                    // scrollbar={{ draggable: true }}
-                    // onSlideChange={() => console.log('slide change')}
-                    // onSwiper={(swiper) => console.log(swiper)}
-                    breakpoints={{
-                        '@0.00': { slidesPerView: 2 },
-                        '@0.75': { slidesPerView: 2 },
-                        '@1.00': { slidesPerView: 3 },
-                        '@1.50': { slidesPerView: 5 },
-                    }}
-                // modules={[Navigation, Pagination]}
+                <Carousel
+                    responsive={responsive}
+                    customLeftArrow={customLeftArrow}
+                    customRightArrow={customRightArrow}
                 >
-                    <SwiperSlide>
-                        <div data-aos="flip-left"
-                            data-aos-duration="1500"
-                            data-aos-easing="ease-out-cubic" className='h-96 bg-[#533ac2] p-5 flex flex-col justify-between'>
-                            <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
-                            <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
-                                <br /> PRICING</h3>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div data-aos="flip-left"
-                            data-aos-duration="1500"
-                            data-aos-easing="ease-out-cubic" className='h-96 bg-[#c2613a] p-5 flex flex-col justify-between'>
-                            <img src={icon2} alt="" className='md:w-16 w-12 ms-auto object-contain' />
-                            <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>FLEXIBILITY</h3>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div data-aos="flip-left"
-                            data-aos-duration="1500"
-                            data-aos-easing="ease-out-cubic" className='h-96 bg-[#f9c82a] p-5 flex flex-col justify-between'>
-                            <img src={icon3} alt="" className='md:w-16 w-12 ms-auto object-contain' />
-                            <h3 className='md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>QUICK START</h3>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div data-aos="flip-left"
-                            data-aos-duration="1500"
-                            data-aos-easing="ease-out-cubic" className='h-96 bg-[#737373] p-5 flex flex-col justify-between'>
-                            <img src={icon4} alt="" className='md:w-16 w-12 ms-auto object-contain' />
-                            <h3 className=' md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>DUE
-                                <br /> DILIGENCE</h3>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div data-aos="flip-left"
-                            data-aos-duration="1500"
-                            data-aos-easing="ease-out-cubic" className='h-96 bg-[#d0d0d0] p-5 flex flex-col justify-between'>
-                            <img src={icon5} alt="" className='md:w-16 w-12 ms-auto object-contain' />
-                            <h3 className=' md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>HONEST
-                                <br /> DELIVERABLES</h3>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div data-aos="flip-left"
-                            data-aos-duration="1500"
-                            data-aos-easing="ease-out-cubic" className='h-96 bg-[#533ac2] p-5 flex flex-col justify-between'>
-                            <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
-                            <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
-                                <br /> PRICING</h3>
-                        </div>
-                    </SwiperSlide>
-                    {/* <div className="swiper-button-next">
-                        <button onClick={() => swiper.slideNext()}>
-                            <IoIosArrowDropright />
-                        </button>
+                    <div data-aos="flip-left"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#533ac2] p-5 flex flex-col justify-between'>
+                        <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
+                        <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
+                            <br /> PRICING</h3>
                     </div>
-                    <div className="swiper-button-prev">
-                        <button>
-                            <IoIosArrowDropleft />
-                        </button>
-                    </div> */}
-                </Swiper>
+
+                    <div data-aos="flip-left"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#c2613a] p-5 flex flex-col justify-between'>
+                        <img src={icon2} alt="" className='md:w-16 w-12 ms-auto object-contain' />
+                        <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>FLEXIBILITY</h3>
+                    </div>
+
+
+                    <div data-aos="flip-left"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#f9c82a] p-5 flex flex-col justify-between'>
+                        <img src={icon3} alt="" className='md:w-16 w-12 ms-auto object-contain' />
+                        <h3 className='md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>QUICK START</h3>
+                    </div>
+
+
+                    <div data-aos="flip-left"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#737373] p-5 flex flex-col justify-between'>
+                        <img src={icon4} alt="" className='md:w-16 w-12 ms-auto object-contain' />
+                        <h3 className=' md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>DUE
+                            <br /> DILIGENCE</h3>
+                    </div>
+
+
+                    <div data-aos="flip-left"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#d0d0d0] p-5 flex flex-col justify-between'>
+                        <img src={icon5} alt="" className='md:w-16 w-12 ms-auto object-contain' />
+                        <h3 className=' md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>HONEST
+                            <br /> DELIVERABLES</h3>
+                    </div>
+
+
+                    <div data-aos="flip-left"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#533ac2] p-5 flex flex-col justify-between'>
+                        <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
+                        <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
+                            <br /> PRICING</h3>
+                    </div>
+                </Carousel>
             </div>
         </div>
     );
