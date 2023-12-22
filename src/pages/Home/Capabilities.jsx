@@ -23,7 +23,7 @@ const CustomArrow = ({ onClick, className, arrow }) => {
 const Capabilities = () => {
 
     const customLeftArrow = <CustomArrow className="md:text-5xl text-2xl absolute z-10 text-white md:left-5 cursor-pointer" arrow={<IoIosArrowDropleft />} />;
-    const customRightArrow = <CustomArrow className="md:text-5xl text-2xl absolute z-10 md:text-[#533ac2] text-white md:right-5 right-1 cursor-pointer" arrow={<IoIosArrowDropright />} />;
+    const customRightArrow = <CustomArrow className="md:text-5xl text-2xl absolute z-10 md:text-[#1c2885] text-white md:right-5 right-1 cursor-pointer" arrow={<IoIosArrowDropright />} />;
 
 
     const responsive = {
@@ -99,13 +99,13 @@ const Capabilities = () => {
                     </div>
 
 
-                    <div data-aos="flip-left"
+                    {/* <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#533ac2] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#1c2885] p-5 flex flex-col justify-between'>
                         <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
                             <br /> PRICING</h3>
-                    </div>
+                    </div> */}
                 </Carousel>
             </div>
         </div>

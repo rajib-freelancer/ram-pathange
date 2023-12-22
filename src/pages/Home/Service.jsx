@@ -54,11 +54,11 @@ const Service = () => {
                             data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom"
                         >
-                            <div className="col-span-1 bg-[#092288] md:h-48 h-20 md:w-48 w-20 rounded-full p-5 grid place-content-center">
+                            <div className="col-span-1 bg-[#1c2885] md:h-48 h-20 md:w-48 w-20 rounded-full p-5 grid place-content-center">
                                 <img src={image} alt="" className=' md:h-20 h-12 object-contain' />
                             </div>
                             <div className="col-span-3 flex flex-col justify-center md:gap-5 gap-1">
-                                <h1 className="text-[#092288] md:text-2xl text-sm font-semibold">
+                                <h1 className="text-[#1c2885] md:text-2xl text-sm font-semibold">
                                     {title}
                                 </h1>
                                 <p className='md:text-xl text-[10px] md:w-[85%]'>

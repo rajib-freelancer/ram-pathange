@@ -41,12 +41,12 @@ const Main = () => {
                         <FaCircleArrowUp />
                     </button>
                     <div className='fixed z-40 left-5 bottom-5 text-4xl flex flex-col gap-2'>
-                        <button className='text-green-500 hover:opacity-70'
+                        <button className='text-green-500 hover:opacity-70 bg-white rounded-full p-2'
                             onClick={() => window.open(`whatsapp://send?phone=91${phoneNumber}`, '_blank')}
                         >
                             <RiWhatsappFill />
                         </button>
-                        <button className='text-blue-600 hover:opacity-70'
+                        <button className='text-blue-600 hover:opacity-70 bg-white rounded-full p-2'
                         onClick={()=> window.open(`tel://+91${phoneNumber}`, '_blank')}
                         >
                             <IoCall />
