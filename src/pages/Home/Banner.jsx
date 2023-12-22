@@ -4,6 +4,7 @@ import image1b from '../../assets/img1-mobile.png';
 import image2a from '../../assets/img2.png';
 import image2b from '../../assets/img2-mobile.png';
 import card from '../../assets/01.png';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Banner = () => {
 
@@ -23,20 +24,7 @@ const Banner = () => {
                         className='md:w-72 w-52 p-5' />
                 </div>
             </div>
-            <div className='md:px-40 px-5 py-5 flex justify-between items-center text-center md:flex-row flex-col gap-5'>
-                <select data-aos="fade-right"
-                    data-aos-duration="1000" name="" id="" className='border-2 border-slate-400 p-3 py-1 rounded-sm px-10 md:w-48 w-full text-center'>
-                    <option value="service" className='' >SERVICE</option>
-                </select>
-                <input data-aos="fade-right"
-                    data-aos-duration="1500" type="text" name="name" id="" placeholder='NAME' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' />
-                <input data-aos="fade-right"
-                    data-aos-duration="2000" type="text" name="contact" id="" placeholder='CONTACT' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' />
-                <input data-aos="fade-right"
-                    data-aos-duration="2500" type="text" name="email" id="" placeholder='EMAIL' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' />
-                <button data-aos="fade-right"
-                    data-aos-duration="3000" type='submit' className='text-white bg-[#1c2885] px-10 py-1 rounded-full md:w-48 w-full'>SUBMIT</button>
-            </div>
+            <ContactForm />
             <div className='h-screen bg-cover bg-center p-5 relative' id='legacy' style={{
                 backgroundImage: `url(${isMobile ? image2b : image2a})`
             }}>

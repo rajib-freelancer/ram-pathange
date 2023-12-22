@@ -4,6 +4,7 @@ import icon2 from '../../assets/08.png';
 import icon3 from '../../assets/09.png';
 import icon4 from '../../assets/10.png';
 import icon5 from '../../assets/11.png';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 
 const Service = () => {
@@ -69,20 +70,7 @@ const Service = () => {
                     })
                 }
             </div>
-            <div className='md:px-40 px-5 py-5 flex justify-between items-center text-center md:flex-row flex-col gap-5'>
-                <select data-aos="fade-right"
-                    data-aos-duration="1000" name="" id="" className='border-2 border-slate-400 p-3 py-1 rounded-sm px-10 md:w-48 w-full text-center'>
-                    <option value="service" >SERVICE</option>
-                </select>
-                <input data-aos="fade-right"
-                    data-aos-duration="1500" type="text" name="name" id="" placeholder='NAME' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' />
-                <input data-aos="fade-right"
-                    data-aos-duration="2000" type="text" name="contact" id="" placeholder='CONTACT' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' />
-                <input data-aos="fade-right"
-                    data-aos-duration="2500" type="text" name="email" id="" placeholder='EMAIL' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' />
-                <button data-aos="fade-right"
-                    data-aos-duration="3000" type='submit' className='text-white bg-[#1c2885] px-10 py-1 rounded-full md:w-48 w-full'>SUBMIT</button>
-            </div>
+            <ContactForm />
         </div>
     );
 };

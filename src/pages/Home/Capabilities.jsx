@@ -59,7 +59,7 @@ const Capabilities = () => {
                 >
                     <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#533ac2] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#533ac2] p-5 flex flex-col justify-between'>
                         <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
                             <br /> PRICING</h3>
@@ -67,7 +67,7 @@ const Capabilities = () => {
 
                     <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#c2613a] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#c2613a] p-5 flex flex-col justify-between'>
                         <img src={icon2} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>FLEXIBILITY</h3>
                     </div>
@@ -75,7 +75,7 @@ const Capabilities = () => {
 
                     <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#f9c82a] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#f9c82a] p-5 flex flex-col justify-between'>
                         <img src={icon3} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className='md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>QUICK START</h3>
                     </div>
@@ -83,7 +83,7 @@ const Capabilities = () => {
 
                     <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#737373] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#737373] p-5 flex flex-col justify-between'>
                         <img src={icon4} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className=' md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>DUE
                             <br /> DILIGENCE</h3>
@@ -92,7 +92,7 @@ const Capabilities = () => {
 
                     <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#d0d0d0] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#d0d0d0] p-5 flex flex-col justify-between'>
                         <img src={icon5} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className=' md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>HONEST
                             <br /> DELIVERABLES</h3>
@@ -101,7 +101,7 @@ const Capabilities = () => {
 
                     {/* <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-96 bg-[#1c2885] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#1c2885] p-5 flex flex-col justify-between'>
                         <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
                             <br /> PRICING</h3>
