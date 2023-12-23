@@ -21,11 +21,11 @@ const Navbar = () => {
                     <button className='w-full flex justify-end' onClick={() => { setMenu(!menu) }}>
                         <IoMdCloseCircleOutline className='text-3xl' />
                     </button>
-                    <ul className='w-full h-full flex items-center flex-col gap-5 text-2xl text-black font-semibold uppercase justify-center'>
+                    <ul className='w-full h-full flex items-center flex-col gap-5 md:text-2xl text-black font-semibold uppercase md:justify-center md:mt-0 mt-20'>
                         <li><a href="/#home" className='hover:border-b-2 border-yellow-600'>Home</a></li>
                         <li><a href="/#legacy" className='hover:border-b-2 border-yellow-600'>Legacy</a></li>
                         <li><a href="/#capabilities" className='hover:border-b-2 border-yellow-600'>Capabilities</a></li>
-                        <li><a href="/#service" className='hover:border-b-2 border-yellow-600'>Service</a></li>
+                        <li><a href="/#service" className='hover:border-b-2 border-yellow-600'>Services</a></li>
                         <li><a href="/#library" className='hover:border-b-2 border-yellow-600'>Library</a></li>
                     </ul>
                 </div>

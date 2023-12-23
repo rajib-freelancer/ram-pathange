@@ -34,8 +34,10 @@ const ContactForm = () => {
     return (
         <div>
             <form ref={form} onSubmit={handleSubmit} className='md:px-40 px-5 py-5 flex justify-between items-center text-center md:flex-row flex-col gap-5'>
-                <select data-aos="fade-right"
-                    data-aos-duration="1000" name="service" id="" className='border-2 border-slate-400 py-1 rounded-sm md:w-48 w-full text-center'
+                <select
+                    // data-aos="fade-right"
+                    // data-aos-duration="1000"
+                    name="service" id="" className='border-2 border-slate-400 py-1 rounded-sm md:w-48 w-full text-center'
                     required
                 >
                     <option value="SERVICE" className='' disabled selected >SERVICE</option>
@@ -50,14 +52,21 @@ const ContactForm = () => {
                     <option value="Filling related services" className='' >Filling related services</option>
                     <option value="RERA related services" className='' >RERA related services</option>
                 </select>
-                <input data-aos="fade-right"
-                    data-aos-duration="1500" type="text" name="name" id="" placeholder='NAME' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' required />
-                <input data-aos="fade-right"
-                    data-aos-duration="2000" type="number" name="contact" id="" placeholder='CONTACT' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' required />
-                <input data-aos="fade-right"
-                    data-aos-duration="2500" type="email" name="email" id="" placeholder='EMAIL' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' required />
-                <button data-aos="fade-right"
-                    data-aos-duration="3000"
+                <input
+                    // data-aos="fade-right"
+                    // data-aos-duration="1500"
+                    type="text" name="name" id="" placeholder='NAME' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' required />
+                <input
+                    // data-aos="fade-right"
+                    // data-aos-duration="2000"
+                    type="number" name="contact" id="" placeholder='CONTACT' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' required />
+                <input
+                    // data-aos="fade-right"
+                    // data-aos-duration="2500"
+                    type="email" name="email" id="" placeholder='EMAIL' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' required />
+                <button
+                    // data-aos="fade-right"
+                    // data-aos-duration="3000"
                     type='submit' className='text-white bg-[#1c2885] px-10 py-1 rounded-full md:w-48 w-full'
                     disabled={loading}
                 >SUBMIT</button>

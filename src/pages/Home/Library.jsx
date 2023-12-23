@@ -56,10 +56,10 @@ const Library = () => {
             </div>
             <div className="md:py-32 md:px-20 p-5 bg-[#1c2885]">
                 <div className="uppercase"
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
-                    data-aos-duration="1000"
+                    // data-aos="fade-right"
+                    // data-aos-offset="300"
+                    // data-aos-easing="ease-in-sine"
+                    // data-aos-duration="1000"
                 >
                     <Carousel
                         responsive={responsive}
