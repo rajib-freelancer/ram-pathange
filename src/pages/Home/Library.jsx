@@ -51,8 +51,8 @@ const Library = () => {
 
     return (
         <div id="library">
-            <div className="md:text-4xl text-2xl text-[#98841d] text-center md:py-16 py-10">
-                <h1>Library</h1>
+            <div className="md:text-4xl text-2xl text-center md:py-16 py-10">
+                <h1>Articles</h1>
             </div>
             <div className="md:py-32 md:px-20 p-5 bg-[#1c2885]">
                 <div className="uppercase"

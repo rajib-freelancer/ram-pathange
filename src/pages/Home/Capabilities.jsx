@@ -48,7 +48,7 @@ const Capabilities = () => {
 
     return (
         <div id="capabilities">
-            <div className="md:text-4xl text-2xl text-[#98841d] text-center md:py-16 py-10">
+            <div className="md:text-4xl text-2xl text-center md:py-16 py-10">
                 <h1>Our Capabilities</h1>
             </div>
             <div className='p-2'>
@@ -59,7 +59,7 @@ const Capabilities = () => {
                 >
                     <div data-aos="flip-left"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#533ac2] p-5 flex flex-col justify-between'>
+                        data-aos-easing="ease-out-cubic" className='h-80 bg-[#1c2885] p-5 flex flex-col justify-between'>
                         <img src={icon1} alt="" className='md:w-16 w-12 ms-auto object-contain' />
                         <h3 className='text-white md:text-2xl font-semibold mt-auto md:leading-6 leading-4'>SIMPLE
                             <br /> PRICING</h3>

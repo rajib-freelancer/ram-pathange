@@ -39,11 +39,16 @@ const ContactForm = () => {
                     required
                 >
                     <option value="SERVICE" className='' disabled selected >SERVICE</option>
-                    <option value="BACKEND" className='' >BACKEND</option>
-                    <option value="VIRTUAL CFO" className='' >VIRTUAL CFO</option>
-                    <option value="INTERNATIONAL TAXATION" className='' >INTERNATIONAL TAXATION</option>
-                    <option value="CORPORATE LAW" className='' >CORPORATE LAW</option>
-                    <option value="CONCIERGE" className='' >CONCIERGE</option>
+                    <option value="ITR1" className='' >ITR1</option>
+                    <option value="ITR2 and Others" className='' >ITR2 and Others</option>
+                    <option value="GST Returns" className='' >GST Returns</option>
+                    <option value="Backend services incorporation" className='' >Backend services incorporation</option>
+                    <option value="Related services" className='' >Related services</option>
+                    <option value="Income Tax advisory" className='' >Income Tax advisory</option>
+                    <option value="GST advisory services" className='' >GST advisory services</option>
+                    <option value="Book keeping services" className='' >Book keeping services</option>
+                    <option value="Filling related services" className='' >Filling related services</option>
+                    <option value="RERA related services" className='' >RERA related services</option>
                 </select>
                 <input data-aos="fade-right"
                     data-aos-duration="1500" type="text" name="name" id="" placeholder='NAME' className='border-2 border-slate-400 p-3 py-1 rounded-sm placeholder:text-center md:w-48 w-full' required />
