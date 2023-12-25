@@ -26,7 +26,7 @@ const Navbar = () => {
                         <li><a href="/#legacy" className='hover:border-b-2 border-yellow-600'>Legacy</a></li>
                         <li><a href="/#capabilities" className='hover:border-b-2 border-yellow-600'>Capabilities</a></li>
                         <li><a href="/#service" className='hover:border-b-2 border-yellow-600'>Services</a></li>
-                        <li><a href="/#library" className='hover:border-b-2 border-yellow-600'>Library</a></li>
+                        <li><a href="/#library" className='hover:border-b-2 border-yellow-600'>Articles</a></li>
                     </ul>
                 </div>
             </div>
